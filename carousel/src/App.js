@@ -1,15 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
-import Carousel from './Carousel';
-import "./Carousel.css";
-import { scrollContext, ScrollConsumer, ScrollProvider } from './scrollContext';
+import Carousel from './carousel/Carousel';
+import "./carousel/Carousel.css";
+import { scrollContext, ScrollConsumer, ScrollProvider } from './carousel/scrollContext';
+import { useSlotProps } from '@mui/base';
 
 function App() {
 
+  var arrowStyle= {
+    borderRadius: "100px",
+    padding: "2px",
+    border: "1px solid black",
+    color: "black",
+    backgroundColor: "green"
+  }
   return (
     <div className="App">
+      <br/>
+      <br/>
+      <br/>
       <ScrollProvider value={{first:0, count:3}}>
-        <Carousel containerClass="container" countVisible={3}>
+        <Carousel containerClass="container" countVisible={3} shiftAmount={3}>
           {[
             <div className='item'>1</div>,
             <div className='item'>2</div>,
