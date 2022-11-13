@@ -1,0 +1,43 @@
+.item
+{
+    background-color: aqua;
+    border-radius: 5;
+    border: 1px solid black;
+    width: 100px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 50px;
+    margin: 2px;
+}
+.container
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.itemContainer
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
+.arrow
+{
+    border-radius: 100px;
+    padding: 2px;
+    border:1px solid black;
+    color: black;
+}
+.left
+{
+    justify-self: flex-start;
+}
+.right
+{
+    justify-self: flex-end;
+}
