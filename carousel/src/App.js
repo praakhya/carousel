@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Carousel from './carousel/Carousel';
-import "./carousel/Carousel.css";
+import "./Carousel.css";
 import { scrollContext, ScrollConsumer, ScrollProvider } from './carousel/scrollContext';
 import { useSlotProps } from '@mui/base';
 
