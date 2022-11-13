@@ -1,9 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-import Carousel from './carousel/Carousel';
-import "./Carousel.css";
-import { scrollContext, ScrollConsumer, ScrollProvider } from './carousel/scrollContext';
-import { useSlotProps } from '@mui/base';
+
+import Carousel from './lib/components/Carousel';
+import { scrollContext, ScrollConsumer, ScrollProvider } from './lib/components/scrollContext';
+
 
 function App() {
 
@@ -15,7 +13,7 @@ function App() {
     backgroundColor: "green"
   }
   var itemArr=[
-    <div className='item'>1</div>,
+    <div className='item'>1 sdfsdf sfsfs fsd fs fs <br/>fsd fsd fsdf sdf sf sdf sd <br/>fsdf sd fsd fsd fsd sfd </div>,
     <div className='item'>2</div>,
     <div className='item'>3</div>,
     <div className='item'>4</div>,
@@ -42,19 +40,24 @@ function App() {
   ]
   return (
     <div className="App">
-      <br/>
-      <br/>
-      <br/>
-      <ScrollProvider value={{first:0, count:3}}>
-        <Carousel 
+      
+      <p>some text</p>
+        <p>some text</p>
+        <p>some text</p>
+        <p>some text</p>
+        <Carousel
         containerClass="container" 
         itemClass="item"
         itemContainerClass="itemContainer"
         arrowContainerClass="arrows"
         countVisible={3} 
         shiftAmount={3}>
+          {itemArr}
         </Carousel>
-      </ScrollProvider>
+        <p>some text</p>
+        <p>some text</p>
+        <p>some text</p>
+        <p>some text</p>
     </div>
   );
 }
