@@ -1,0 +1,37 @@
+.container
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width:100%;
+    height:fit-content;
+    max-width: none;
+}
+.itemContainer
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly; 
+    width: 100%;
+    flex-grow: 1;;
+}
+.arrows
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    z-index: 10;
+}
+.left
+{
+    justify-self: flex-start;
+}
+.right
+{
+    justify-self: flex-end;
+}
